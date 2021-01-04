@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/bg_big.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% auto;
+  background-color: #000;
+}
+header {
+  height: 1.25rem;
+}
+header .left_info {
+  float: left;
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+header .left_info .nav_group {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.5rem;
+  float: left;
+}
+header .left_info .nav_group .nav_item {
+  float: left;
+  color: #11C2EE;
+  font-size: 0.15rem;
+  height: 0.5rem;
+  line-height: 0.25rem;
+  border-radius: 0.375rem;
+  padding: 0.125rem 0.25rem;
+  background-image: linear-gradient(to right, rgba(17, 105, 238, 0.5) 0, transparent);
+}
+header .left_info .nav_group .home_page {
+  color: #fff;
+}
+header .left_info .location {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  float: right;
+  color: #ccc;
+  margin-right: 1rem;
+  font-size: 0.15rem;
+}
+header .title {
+  height: 100%;
+  padding: 0.25rem 0;
+  float: left;
+  width: 40%;
+  text-align: center;
+  font-size: 0.425rem;
+  color: #fff;
+}
+header .date_picker {
+  float: left;
+  width: 30%;
+  position: relative;
+}
+header .date_picker .date_container {
+  position: absolute;
+  right: 0.075rem;
+  top: 0.375rem;
+  background-color: rgba(17, 105, 238, 0.1);
+  margin-right: 0.5rem;
+  color: #ccc;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.15rem;
+}
+main {
+  max-width: 1920px;
+  min-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.5rem 0;
+}
+main .column {
+  height: 12rem;
+  float: left;
+  background-color: rgba(0, 10, 51, 0.4);
+  width: 28%;
+}
+main .column:nth-child(2) {
+  width: 44%;
+  background-color: transparent;
+}
+main .column .panel {
+  height: 3.25rem;
+  padding: 0.25rem 0.25rem 0;
+}
+main .column .panel .title {
+  width: 2.6375rem;
+  height: 0.6125rem;
+  background-image: url(../images/bg_title.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% auto;
+  text-align: center;
+  line-height: 0.6125rem;
+  color: #99FFFF;
+  font-size: 0.2rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main .column .line01 {
+  height: 3.5rem;
+  width: 100%;
+}
+main .column .line01 #left_chart01 {
+  width: 6rem;
+  height: 2.5rem;
+}
+main .column .circle01 {
+  height: 5rem;
+  width: 100%;
+}
+main .column .circle01 .left_charts_container {
+  height: 3.875rem;
+  width: 100%;
+}
+main .column .circle01 .left_charts_container .title_item {
+  margin-top: 0.125rem;
+  width: 100%;
+  overflow: hidden;
+}
+main .column .circle01 .left_charts_container .title_item div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: #33CCFF;
+  font-size: 0.175rem;
+  font-weight: 200;
+}
+main .column .circle01 .left_charts_container #left_chart02 {
+  width: 100%;
+  height: 3.75rem;
+}
+main .column .line02 {
+  width: 100%;
+  height: 3.125rem;
+}
+main .column .line02 #left_chart03 {
+  width: 100%;
+  height: 2.4rem;
+}
+main .center_zone .number {
+  text-align: center;
+}
+main .center_zone .number span {
+  margin: 0 0.125rem;
+  font-size: 0.15rem;
+  color: #7CE1FB;
+}
+main .center_zone .number .big_number {
+  font-weight: 800;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #fff, #7CE1FB);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+main .center_zone .center_chart_container {
+  overflow: hidden;
+  padding: 0 0.25rem;
+}
+main .center_zone .center_chart_container .left_circle_box {
+  float: left;
+  width: 50%;
+  height: 2.5rem;
+}
+main .center_zone .center_chart_container .left_circle_box .circle_item {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+main .center_zone .center_chart_container .left_circle_box .circle_item .circleChart {
+  width: 100%;
+  height: 2.25rem;
+}
+main .center_zone .center_chart_container .left_circle_box .circle_item .desc {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+}
+main .center_zone .center_chart_container .left_circle_box .circle_item #circleChart01 {
+  width: 100%;
+  height: 2.25rem;
+}
+main .center_zone .center_chart_container .right_bar_box {
+  float: left;
+  width: 45%;
+  height: 2.5rem;
+  margin-top: 20px;
+}
+main .center_zone .center_chart_container .right_bar_box #bar_item01,
+main .center_zone .center_chart_container .right_bar_box #bar_item02 {
+  width: 100%;
+  height: 50%;
+}
+main .center_zone .big_bar_container {
+  width: 100%;
+  height: 7.875rem;
+}
+main .center_zone .big_bar_container .big_bar {
+  padding-top: 0 !important;
+}
+main .center_zone .big_bar_container .big_bar #banner {
+  width: 100%;
+  height: 7.125rem;
+  margin: 10px auto;
+}
+main .center_zone .big_bar_container .big_bar #content {
+  width: 100%;
+  height: 7.125rem;
+  overflow: hidden;
+  position: relative;
+}
+main .center_zone .big_bar_container .big_bar #ul {
+  height: 7.125rem;
+  position: absolute;
+  left: 0;
+}
+main .center_zone .big_bar_container .big_bar #ul li {
+  list-style: none;
+  width: 1000px;
+  height: 500px;
+  float: left;
+}
+main .center_zone .big_bar_container .big_bar #ul img {
+  width: 1000px;
+  height: 500px;
+}
+main .center_zone .big_bar_container .big_bar .b {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: pointer;
+}
+main .center_zone .big_bar_container .big_bar .b img {
+  width: 100px;
+  height: 100px;
+}
+main .center_zone .big_bar_container .big_bar #left {
+  top: 200px;
+  left: 50px;
+}
+main .center_zone .big_bar_container .big_bar #right {
+  top: 200px;
+  right: 50px;
+}
+main .center_zone .big_bar_container .big_bar #dotul {
+  width: 500px;
+  position: relative;
+  left: 7rem;
+  top: -0.25rem;
+}
+main .center_zone .big_bar_container .big_bar #dotul li {
+  list-style: none;
+  float: left;
+  width: 0.125rem;
+  height: 0.125rem;
+  border-radius: 0.25rem;
+  background-color: #336699;
+  margin-left: 0.25rem;
+  cursor: pointer;
+  font-size: 0.05rem;
+  text-align: center;
+  padding-top: 0.025rem;
+}
+main .center_zone .big_bar_container .big_bar .active {
+  width: 0.25rem !important;
+  height: 0.25rem !important;
+  margin-top: -0.0625rem;
+  background-color: #33CCFF !important;
+}
+main .center_zone .big_bar_container .big_bar .big_bar_box {
+  width: 9.25rem;
+}
+main .center_zone .big_bar_container .big_bar .big_bar_box .lunbo_chart01 {
+  width: 9.5rem;
+  height: 3.25rem;
+}
+main .center_zone .big_bar_container .big_bar .table_box {
+  width: 9.5rem;
+  overflow: hidden;
+  height: 4rem;
+  padding: 0.125rem 0.25rem 0;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table_title {
+  color: #33CCFF;
+  font-size: 0.15rem;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table {
+  font-size: 0.15rem;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table > thead > tr {
+  background: rgba(51, 102, 153, 0.4);
+}
+main .center_zone .big_bar_container .big_bar .table_box .table > thead > tr > th {
+  white-space: nowrap;
+  padding: 8px;
+  line-height: 1.42857143;
+  color: #ccc;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table > tbody > tr {
+  text-align: center;
+  color: #33CCFF;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table > tbody > tr > td {
+  padding: 8px;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table > tbody > tr:nth-child(even) {
+  background: rgba(51, 102, 153, 0.4);
+}
+main .center_zone .big_bar_container .big_bar .table_box .table-cont {
+  width: 9.375rem;
+  /**make table can scroll**/
+  height: 3.25rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /** add some style**/
+  /*padding: 2px;*/
+  margin: 20px 10px;
+}
+main .center_zone .big_bar_container .big_bar .table_box .table-striped {
+  width: 100%;
+}
+main .right_zone .top_chart_container {
+  width: 100%;
+  height: 3.75rem;
+}
+main .right_zone .top_chart_container .compare_data_box {
+  overflow: hidden;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item {
+  float: left;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  width: 28%;
+  height: 0.875rem;
+  background-color: rgba(51, 102, 153, 0.2);
+  position: relative;
+  padding-left: 0.15rem;
+  padding-top: 0.1rem;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item .triangle-topleft {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 0.175rem solid #33CCFF;
+  border-right: 0.175rem solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item span {
+  font-size: 0.15rem;
+  font-weight: 600;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item .font_color_white {
+  color: #ccc;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item .font_color_yellow {
+  color: #FFFF99;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item .font_color_green {
+  color: #33FFCC;
+}
+main .right_zone .top_chart_container .compare_data_box .data_box_item .font_color_blue {
+  color: #33CCFF;
+  text-align: center;
+  margin-top: 0.125rem;
+  font-size: 0.15rem;
+  font-weight: 600;
+}
+main .right_zone .top_chart_container .chart_box {
+  width: 100%;
+  overflow: hidden;
+}
+main .right_zone .top_chart_container .chart_box .left_chart {
+  float: left;
+  width: 40%;
+  height: 1.75rem;
+}
+main .right_zone .top_chart_container .chart_box .right_chart {
+  float: left;
+  width: 60%;
+  height: 1.75rem;
+}
+main .right_zone .center_chart_container {
+  width: 100%;
+  height: 5.5rem;
+}
+main .right_zone .center_chart_container .center_big_bar {
+  width: 100%;
+  height: 4rem;
+}
+main .right_zone .center_chart_container .bottom_data {
+  width: 100%;
+  height: 0.5rem;
+}
+main .right_zone .center_chart_container .bottom_data .bottom_data_item {
+  float: left;
+  width: 50%;
+  height: 0.375rem;
+  font-size: 0.175rem;
+  color: #FFFF99;
+  text-align: center;
+  padding-top: 0.0625rem;
+}
+main .right_zone .center_chart_container .bottom_data .bottom_data_item span {
+  color: #3399FF;
+  font-size: 16px;
+}
+main .right_zone .right_bottom_chart_container {
+  width: 100%;
+  height: 2.75rem;
+}
+main .right_zone .right_bottom_chart_container .right_bottom_chart_line {
+  width: 100%;
+  height: 1.75rem;
+}
